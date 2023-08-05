@@ -30,7 +30,7 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 
 
-@Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
+@Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     k = await manual_filters(client, message)
    
@@ -409,8 +409,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/+40mgi-EjhQdmNTk1'),
-            InlineKeyboardButton('Movie Updates', url='https://t.me/+zW-bcv3QtgZjZTE9')
+            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/+McgkPCPKxglhNmVl'),
+            InlineKeyboardButton('Movie Updates', url='https://t.me/+Hb9L3_SFoy1lYzdl')
         ], 
         ]
             
