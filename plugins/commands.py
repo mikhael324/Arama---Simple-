@@ -25,8 +25,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me As Admin 👉 Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/MVM_Links'),
-            InlineKeyboardButton('Movie Updates', url='https://t.me/+6Mb-6zj2Gh0xYjhl')
+            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/+McgkPCPKxglhNmVl'),
+            InlineKeyboardButton('Movie Updates', url='https://t.me/+Hb9L3_SFoy1lYzdl')
         ], 
         ]
             
@@ -56,9 +56,9 @@ async def start(client, message):
 
         ], [
 
-            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/MVM_Links'),
+            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/+McgkPCPKxglhNmVl'),
 
-            InlineKeyboardButton('Movie Updates', url='https://t.me/+6Mb-6zj2Gh0xYjhl')
+            InlineKeyboardButton('Movie Updates', url='https://t.me/+Hb9L3_SFoy1lYzdl')
 
         ], 
 
@@ -104,8 +104,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me As Admin 👉 Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/MVM_Links'),
-            InlineKeyboardButton('Movie Updates', url='https://t.me/+6Mb-6zj2Gh0xYjhl')
+            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/+McgkPCPKxglhNmVl'),
+            InlineKeyboardButton('Movie Updates', url='https://t.me/+Hb9L3_SFoy1lYzdl')
         ], 
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
