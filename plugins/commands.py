@@ -15,7 +15,7 @@ import re
 import json
 import base64
 logger = logging.getLogger(__name__)
-from plugins.fsub import ForceSub
+
 
 BATCH_FILES = {}
 
