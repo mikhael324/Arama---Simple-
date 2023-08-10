@@ -10,7 +10,7 @@ import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
-    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, LOG_CHANNEL
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, LOG_CHANNEL, GRP_LNK, CHNL_LNK
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
@@ -66,7 +66,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂 [{get_size(file.file_size)}] 👉 {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🍿 [{get_size(file.file_size)}] 🗃️ {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -409,8 +409,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('Movie Search Group', url= 'https://t.me/+McgkPCPKxglhNmVl'),
-            InlineKeyboardButton('Movie Updates', url='https://t.me/+Hb9L3_SFoy1lYzdl')
+            InlineKeyboardButton('Movie Search Group', url=CHNL_LNK),
+            InlineKeyboardButton('Movie Updates', url=GRP_LNK)
         ], 
         ]
             
@@ -646,7 +646,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂[{get_size(file.file_size)}]👉{file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"🍿 [{get_size(file.file_size)}] 🗃️ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files 
